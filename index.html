@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="snake.css" />
+        <link rel="icon" type="image/x-icon" href="sorta_snake.png" />
+        <title>Snake Game</title>
+    </head>
+    <body>
+        <div class="container">
+            <canvas id="gameCanvas" width="600" height="600"></canvas>
+            <div class="container extras">
+                <h1 id="score">Score: 0</h1>
+                <!-- <div class="spacer"></div> -->
+                <button id="restart" onclick="setup()">Restart</button>
+            </div>
+        </div>
+        <img
+            id="snakeHead"
+            src="snake_head.png"
+            width="30"
+            height="30"
+            style="display: none"
+        />
+    </body>
+    <script src="snake_game.js"></script>
+</html>
